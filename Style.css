@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png') #f7f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #333a56;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h2 {
+  color: white;
+  font-size: 22px;
+  margin: 0;
+}
+
+/* Main Container */
+.container {
+  max-width: 600px;
+  width: 90%;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333a56;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.task-section {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #4b6584;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #e9f5f2;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+li.completed {
+  background: #d4edda;
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.actions .complete-btn {
+  color: #4CAF50;
+}
+
+.actions .complete-btn:hover {
+  background-color: #e2f4ea;
+  color: #388e3c;
+}
+
+.actions .delete-btn {
+  color: #dc3545;
+}
+
+.actions .delete-btn:hover {
+  background-color: #f8d7da;
+  color: #c82333;
+}
+
+@media (max-width: 600px) {
+  header h2 {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .add-btn, input[type="text"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
